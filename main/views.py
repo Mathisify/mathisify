@@ -9,5 +9,9 @@ def chapterone(request):
     return render(request, 'chapterone.html')
 
 
-def chaptertwo(request):
-    return render(request, 'chaptertwo.html')
+def about(request):
+    return render(request, 'about.html')
+
+
+def compandint(request):
+    return render(request, 'compandint.html')
