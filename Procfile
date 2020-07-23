@@ -1,0 +1,1 @@
+web: gunicorn mathisify.wsgi --log-file -
