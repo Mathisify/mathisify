@@ -23,7 +23,13 @@
 							</ul>
 						</nav>
 						<nav class="main">
+
 							<ul>
+                                <li>
+                                    {% if user.is_authenticated %}
+                                        <h2>Hello, {{ user.first_name }}</h2>
+                                    {% endif %}
+                                </li>
 								<li class="search">
 									<a class="fa-search" href="#search">Search</a>
 									<form id="search" method="get" action="#">
@@ -61,9 +67,15 @@
 
 						<!-- Actions -->
 							<section>
+
+
 								<ul class="actions stacked">
+                                    {% if user.is_authenticated %}
+                                    <li><a href="/accounts/logout/" class="button large fit">Log Out</a></li>
+                                    {% else %}
 									<li><a href="/accounts/login/" class="button large fit">Log In</a></li>
 									<li><a href="/accounts/register/" class="button large fit">Register</a></li>
+                                    {% endif %}
 								</ul>
 							</section>
 
