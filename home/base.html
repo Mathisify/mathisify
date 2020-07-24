@@ -20,18 +20,18 @@
             <ul>
                 <li><a href="/chapterone/">Chapter 1</a></li>
                 <li><a href="/about/">About Us</a></li>
+                <li>
+                    {% if user.is_authenticated %}
+                        <h3>Hello, {{ user.first_name }}</h3>
+                        {% else %}
+                    {% endif %}
+                </li>
             </ul>
         </nav>
         <nav class="main">
 
             <ul>
-                <li>
-                    {% if user.is_authenticated %}
-                        <h2>Hello, {{ user.first_name }}</h2>
-                        {% else %}
-                        <h2>Hello, There!</h2>
-                    {% endif %}
-                </li>
+                
                 <li class="search">
                     <a class="fa-search" href="#search">Search</a>
                     <form id="search" method="get" action="#">
