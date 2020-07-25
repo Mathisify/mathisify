@@ -23,3 +23,10 @@ def chapterzero(request):
 
 def welcometoscratch(request):
     return render(request, 'welcometoscratch.html')
+    
+def chapterzero(request):
+    return render(request, 'chapterzero.html')
+
+
+def welcometoscratch(request):
+    return render(request, 'welcometoscratch.html')
