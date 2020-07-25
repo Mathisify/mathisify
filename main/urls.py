@@ -7,4 +7,6 @@ urlpatterns = [
     path('chapterone/', views.chapterone),
     path('about/', views.about),
     path('compandint/', views.compandint),
+    path('chapterzero/', views.chapterzero),
+    path('welcometoscratch/', views.welcometoscratch),
 ]
