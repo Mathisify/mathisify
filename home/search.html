@@ -17,27 +17,13 @@
 
             <!-- Post -->
                 <article class="post">
-                    <header>
-                        <div class="title">
-                            <h2><a href="/compandint/">Computers and the Internet</a></h2>
-                            <p><a href="/chapterzero/">Chapter 0 : Computer Science Principles</a></p>
+                    <body>
+                        {% for post in posts %}
+                        <div>
+                            <p><a href="{{ post.link }}">{{ post.title }}</a></p>
                         </div>
-                        <div class="meta">
-                            <time class="published" datetime="2015-11-01">July 22nd, 2020</time>
-                            <a href="https://dylaniskandar.com" class="author"><span class="name">Dylan Iskandar</span><img src="/static/images/avatardylan.png" alt="" /></a>
-                        </div>
-                    </header>
-                    <a href="/compandint/" class="image featured"><img src="/static/images/pic01.jpg" alt="" /></a>
-                    <p>(insert article here)</p>
-                    <footer>
-                        <ul class="actions">
-                            <li><a href="/compandint/" class="button large">Continue Reading</a></li>
-                        </ul>
-                        <ul class="stats">
-                            <li><a href="/chapterzero/">Computer Science Principles</a></li>
-                            <li><a href="#" class="icon solid fa-eye">9.8k</a></li>
-                        </ul>
-                    </footer>
+                        {% endfor %}
+                    </body>
                 </article>
             <!-- Pagination -->
                 <ul class="actions pagination">
@@ -60,13 +46,26 @@
 
             <!-- Mini Posts -->
                 <section>
-                    <body>
-                        {% for post in posts %}
-                        <div>
-                            <p><a href="{{ post.link }}">{{ post.title }}</a></p>
-                        </div>
-                        {% endfor %}
-                    </body>
+                    <div class="mini-posts">
+
+                        <!-- Mini Post -->
+                            <article class="mini-post">
+                                <header>
+                                    <h3><a href="/compandint/">Computers and the Internet</a></h3>
+                                    <time class="published" datetime="2020-22-07">July 22nd, 2020</time>
+                                    <a href="https://dylaniskandar.com" class="author"><img src="/static/images/avatardylan.png" alt="" /></a>
+                                </header>
+                                <a href="/compandint/" class="image"><img src="/static/images/pic04.jpg" alt="" /></a>
+                            </article>
+                            <article class="mini-post">
+                                <header>
+                                    <h3><a href="/welcometoscratch/">Welcome To Scratch!</a></h3>
+                                    <time class="published" datetime="2020-22-07">July 23nd, 2020</time>
+                                </header>
+                                <a href="/welcometoscratch/" class="image"><img src="/static/images/pic08.jpg" alt=""/></a>
+                            </article>
+                        </li>
+                    </div>
                 </section>
 
             <!-- Posts List -->
