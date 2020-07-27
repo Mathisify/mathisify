@@ -9,4 +9,5 @@ urlpatterns = [
     path('compandint/', views.compandint),
     path('chapterzero/', views.chapterzero),
     path('welcometoscratch/', views.welcometoscratch),
+    path('search/', views.search),
 ]

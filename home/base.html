@@ -6,7 +6,7 @@
     <title>Mathisi-fy</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+    <link rel="stylesheet" href="https://drive.google.com/uc?id=161HVNPVr3br81SZuHyP2ZXNmkYTOVLkM"/>
 </head>
 <body class="is-preload">
 
@@ -34,9 +34,9 @@
             <ul>
                 
                 <li class="search">
-                    <a class="fa-search" href="#search">Search</a>
-                    <form id="search" method="get" action="#">
-                        <input type="text" name="query" placeholder="Search"/>
+                    <a class="fa-search" href="#">Search</a>
+                    <form id="search" method="GET" action="/search/">
+                        <input id="query" type="text" name="query" placeholder="Search"/>
                     </form>
                 </li>
                 <li class="menu">
@@ -51,8 +51,9 @@
 
         <!-- Search -->
         <section>
-            <form class="search" method="get" action="#">
-                <input type="text" name="query" placeholder="Search"/>
+            <form id="search" method="GET" action="/search/">
+                <input id="query" type="text" name="query" placeholder="Search"/>
+                <button type="submit">Search</button>
             </form>
         </section>
 

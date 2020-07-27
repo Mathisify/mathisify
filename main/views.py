@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 
 def index(request):
@@ -23,3 +24,10 @@ def chapterzero(request):
 
 def welcometoscratch(request):
     return render(request, 'welcometoscratch.html')
+
+
+def search(request):
+    query = request.GET['query']
+    posts = Post.objects.filter(title__icontains = query)
+    params = {'posts': posts}
+    return render(request, 'search.html', params)
