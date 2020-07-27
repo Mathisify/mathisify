@@ -14,10 +14,10 @@ def register(request):
 
         if password1 == password2:
             if User.objects.filter(username=username).exists():
-                messages.info(request, 'Username Already Taken...')
+                messages.info(request, 'Username Already Taken.')
                 return redirect('register')
             elif User.objects.filter(email=email).exists():
-                messages.info(request, 'Email Already Registered...')
+                messages.info(request, 'Email Already Registered.')
                 return redirect('register')
             else:
                 user = User.objects.create_user(username=username,
@@ -26,10 +26,10 @@ def register(request):
                                                 first_name=first_name,
                                                 last_name=last_name)
                 user.save()
-                messages.info(request, 'You have been registered... Please Login...')
-                return redirect('login')
+                messages.info(request, 'You have been registered. Please login...')
+                return redirect('login')ß
         else:
-            messages.info(request, 'Password Not Matching...')
+            messages.info(request, 'Password Not Matching.')
             return redirect('register')
 
     else:
