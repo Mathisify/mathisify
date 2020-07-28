@@ -1,0 +1,32 @@
+Computers and the Internet
+
+If you're reading this article, you're on a computer and probably on the Internet. 
+But what exactly defines the words "computer" and "the Internet"? 
+Many of us use these tools in our everyday life, but overlook the meaning of what they actually are and their purpose. 
+
+**So, what exactly is a computer?**
+
+As I stated earlier, you're reading this article on a computer. *But Dylan, I'm on my phone!*
+A "computer" doesn't always mean the large industrial machines that you see in movies, or the portable "laptop" computer that your parents use for work.
+Computers are just machines that take in data (as input), stores and processes the data, and displays data (as output).
+Under this definition, your phones and tablets are computers because they take in the data that this website is displaying to them,
+store the data, process it in a way that you can understand (letters and words), and displays the output data (which is the article you are reading right now).
+
+We will be discussing the different ways computers input,  store and process data, and output throughout the rest of the *chapter*.
+
+
+**And this internet thing you mentioned?**
+
+The Internet is the network of *billions* of different computers around the world. 
+When you are going "online" (connecting to the Internet), you have the ability to almost instantaneously communicate with anyone in the world,
+access thousands of online databases, stream movies and more. The opportunities are endless.
+The computers that form the Internet communicate with each other in *bits and bytes* , a "language" optimized for such machines.
+
+**Isn't that just the "Web"?**
+
+Many people confuse the "Internet" with the "Web", yet they are two very different tools. The "Web" is a collection of "websites"
+which are found on the Internet. (Think about it like a :) Like a ____, there are a wide variety of websites on the Internet.
+There are websites to stream movies, websites to play video games, and educational websites like Mathisi-fy :).
+Once you find a website that you want to visit, you can access it through a web browser such as Google Chrome, Firefox or Mozilla.
+The browser pulls the website data from the Internet and displays it on your screen.
+
