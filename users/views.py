@@ -27,7 +27,7 @@ def register(request):
                                                 last_name=last_name)
                 user.save()
                 messages.info(request, 'You have been registered. Please login...')
-                return redirect('login')ß
+                return redirect('login')
         else:
             messages.info(request, 'Password Not Matching.')
             return redirect('register')
