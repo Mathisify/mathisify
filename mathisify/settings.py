@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'mathisify.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2lfp31i6ahu51',
+        'USER': 'ofzuxjlwbvqzxm',
+        'PASSWORD': '46200029ebc171794738d7485ff5982641d6f9570552d5400832ab6922185f2f',
+        'HOST': 'ec2-52-202-66-191.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
