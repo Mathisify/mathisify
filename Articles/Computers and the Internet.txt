@@ -30,3 +30,4 @@ There are websites to stream movies, websites to play video games, and education
 Once you find a website that you want to visit, you can access it through a web browser such as Google Chrome, Firefox or Mozilla.
 The browser pulls the website data from the Internet and displays it on your screen.
 
+
