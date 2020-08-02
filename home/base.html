@@ -67,14 +67,21 @@
             </ul>
         </nav>
         <nav class="main">
-
             <ul>
-                
+                <li>
+                    <ul class="actions stacked">
+                        {% if user.is_authenticated %}
+                            <li><a href="/accounts/logout/" class="button large fit">Log Out</a></li>
+                        {% else %}
+                            <li><a href="/accounts/login/" class="button large fit">Log In</a></li>
+                            <li><a href="/accounts/register/" class="button large fit">Register</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
                 <li class="search">
                     <a class="fa-search" href="#search">Search</a>
                     <form id="search" method="GET" action="/search/">
                         <input id="query" type="text" name="query" placeholder="Search"/>
-                        
                     </form>
                 </li>
                 <li class="menu">
