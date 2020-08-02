@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
-
+{% block content %}
 <html lang="en">
     <head>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174077322-1"></script>
@@ -69,11 +69,11 @@
         <nav class="main">
             <ul>
                 <li>
-                    <ul class="actions stacked">
+                    <ul class="actions">
                         {% if user.is_authenticated %}
-                            <li><a href="/accounts/logout/" class="button fit">Log Out</a></li>
+                            <li><a href="/accounts/logout/" class="button">Log Out</a></li>
                         {% else %}
-                            <li><a href="/accounts/login/" class="button fit">Log In</a></li>
+                            <li><a href="/accounts/login/" class="button">Log In</a></li>
                             <li><a href="/accounts/register/" class="button fit">Register</a></li>
                         {% endif %}
                     </ul>
@@ -123,9 +123,10 @@
         </section>
 
     </section>
-{% block content %}
-{% endblock %}
+
+
 </div>
 
 </body>
 </html>
+{% endblock %}
