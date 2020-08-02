@@ -28,6 +28,9 @@ def welcometoscratch(request):
 def diginfo(request):
     return render(request, 'diginfo.html')
 
+def elements(request):
+    return render(request, 'elements.html')
+
 
 def search(request):
     query = request.GET['query']

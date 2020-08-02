@@ -11,4 +11,5 @@ urlpatterns = [
     path('welcometoscratch/', views.welcometoscratch),
     path('search/', views.search),
     path('diginfo/', views.diginfo),
+    path('elements/', views.elements),
 ]
