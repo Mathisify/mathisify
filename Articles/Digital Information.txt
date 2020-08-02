@@ -1,0 +1,25 @@
+Let’s discuss how computers communicate with each other.  
+Like humans, computers communicate with each other through specific languages. 
+The data and information received is stored in ‘circuits’ inside the computer itself. 
+These circuits and wires carry all the information of the computer.  
+Within these circuits and wires, there are switches are either on or off (1 or 0, Yes or No, True or False), or anything else with two options. 
+Each state of a wire is called a ‘bit”, the smallest piece of information a computer can store. 
+There are eight “bites” in a “byte” With more bites, you can represent more complex information, such as a color or a sentence. 
+
+How do computers store this information? **
+
+Computers count different from the way that we do. We count with the decimal number system, with digits 0-9. 
+This is called base10, because each place value is weighted 10x the previous place value.
+Computers count with the binary number system, which is also known as base2. 
+Unlike our 0-9 digits, base2 only has two digits : “0” and “1”. Each place value is weighted 2x the previous place value. 
+Lets visualize it with four place digits. 
+In the decimal system (from left to right) we have the 1000’s, 100’s, 10’s and 1’s place. 
+In the binary system, it’s the same concept, but we have the 8’s,4’s,2’s, and 1’s place. 
+Each number assigned to a column will be multiple by the “weight” of the column (multiples of 2) and added up for your final number.  
+For example, the number “2” is represented as “10” in the binary system. Each column is either “on” or “off”. 
+You are able to compute any number with this system. 
+
+*What about movies, songs and books? How do computers store those types of data?*
+
+Everything that you have seen on your computer can be stored in the binary number system, and they can be all represented using numbers (0’s and 1’s). 
+
