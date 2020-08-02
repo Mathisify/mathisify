@@ -1,7 +1,7 @@
 Let’s discuss how computers communicate with each other.  
 Like humans, computers communicate with each other through specific languages. 
-The data and information received is stored in ‘circuits’ inside the computer itself. 
-These circuits and wires carry all the information of the computer.  
+The data and information received is stored in ‘circuits’ and wires inside the computer itself. 
+These circuits and wires store and process all the information of the computer.  
 Within these circuits and wires, there are switches are either on or off (1 or 0, Yes or No, True or False), or anything else with two options. 
 Each state of a wire is called a ‘bit”, the smallest piece of information a computer can store. 
 There are eight “bites” in a “byte” With more bites, you can represent more complex information, such as a color or a sentence. 
