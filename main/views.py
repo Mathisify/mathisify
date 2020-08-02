@@ -25,6 +25,9 @@ def chapterzero(request):
 def welcometoscratch(request):
     return render(request, 'welcometoscratch.html')
 
+def diginfo(request):
+    return render(request, 'diginfo.html')
+
 
 def search(request):
     query = request.GET['query']

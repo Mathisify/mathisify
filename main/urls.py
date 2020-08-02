@@ -10,4 +10,5 @@ urlpatterns = [
     path('chapterzero/', views.chapterzero),
     path('welcometoscratch/', views.welcometoscratch),
     path('search/', views.search),
+    path('diginfo/', views.diginfo),
 ]
