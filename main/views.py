@@ -31,6 +31,9 @@ def diginfo(request):
 def elements(request):
     return render(request, 'elements.html')
 
+def workshops(request):
+    return render(request, 'workshops.html')
+
 
 def search(request):
     query = request.GET['query']

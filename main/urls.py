@@ -12,4 +12,5 @@ urlpatterns = [
     path('search/', views.search),
     path('diginfo/', views.diginfo),
     path('elements/', views.elements),
+    path('workshops/', views.workshops),
 ]

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174077322-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-174077322-1');
+		</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<meta property="og:title" content="Mathisi-fy" />
+		<meta property="og:image" content="/static/images/mlogo4.png" />
+		 <!-- Start of Async Drift Code -->
+		 <script>
+			"use strict";
+		
+			!function() {
+			 var t = window.driftt = window.drift = window.driftt || [];
+			if (!t.init) {
+				if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+				t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+				t.factory = function(e) {
+				 return function() {
+					var n = Array.prototype.slice.call(arguments);
+					return n.unshift(e), t.push(n), t;
+				};
+				}, t.methods.forEach(function(e) {
+				 t[e] = t.factory(e);
+			 }), t.load = function(t) {
+				var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+				 o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+				var i = document.getElementsByTagName("script")[0];
+				 i.parentNode.insertBefore(o, i);
+				};
+			 }
+			}();
+			drift.SNIPPET_VERSION = '0.3.1';
+			drift.load('c7yv5hz6yckb');
+			</script>
+			<!-- End of Async Drift Code -->
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>Computers and the Internet</h2>
+										<p><a href="/chaptezero/">Chapter 0 : Computer Science Principles</a></p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2020-28-07">July 28th, 2020</time>
+										<a href="https://dylaniskandar.com" class="author"><span class="name">Dylan Iskandar</span><img src="/static/images/avatardylan.png" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="/static/images/compandint3.png" alt="" /></span>
+								<p><p style="text-indent: 40px">If you're reading this article, you're on a computer and on the Internet. But what exactly defines the words "computer" and "the Internet"? 
+									Many of us use these tools in our everyday life, but overlook the meaning of what they actually are and their intended purpose. </p>
+									<p><b>So, what exactly is a computer?</b></p>
+									<p style="text-indent: 40px">A "computer" doesn't always mean the large industrial machines that you see in movies, or the portable "laptop" computer that your parents use for work.
+										Computers are just machines that take in data (as input), stores and processes the data, and displays data (as output). 
+									<div class="col-12"><span class="image left"><img src="/static/images/compandintdia2.png" alt="" /></span></div>
+										Under this definition, your phones and tablets are computers because they take in the data that this website is displaying to them,
+										store the data, process it in a way that you can understand (letters and words), and displays the output data (which is the article you are reading right now).</p>
+									<p>We will be discussing the different ways computers input,  store and process data, and output throughout the rest of the <a href="/chapterzero/">chapter</a>.</p>
+									<p><b>And this "internet" thing you mentioned?</b></p>
+									<p style="text-indent: 40px">The Internet is the network of <i>billions</i> of different computers around the world. 
+										When you are going "online" (connecting to the Internet), you have the ability to almost instantaneously communicate with anyone in the world,
+										access thousands of online databases, stream movies and more. The opportunities are endless.
+									<div class="col-12"><span class="image right"><img src="/static/images/web2.png" alt="" /></span></div>	
+										The computers that form the Internet communicate with each other in <a href="/diginfo/">bits and bytes</a> , a "language" optimized for such machines.</p>
+										<p><b>Isn't that just the "Web"?</b></p>
+										<p style="text-indent: 40px">Many people confuse the "Internet" with the "Web", yet they are two very different tools. The "Web" is a collection of "websites"
+											which are found on the Internet. Think about it like the ice cream section at a market. There are different flavors of ice cream in the ice cream section, which can be found in the market itself.
+											 Like the many different flavors of ice cream, there are a wide variety of websites on the Internet.
+											There are websites to stream movies, websites to play video games, and educational websites like Mathisi-fy :).
+											Once you find a website that you want to visit, you can access it through a web browser such as Google Chrome, Firefox or Mozilla.
+											The browser pulls the website data from the Internet and displays it on your screen.</p>
+</p>
+								
+								<footer>
+									<ul class="stats">
+										<li><a href="/chapterzero/">Computer Science Principles</a></li>
+										<li><a class="icon solid fa-eye">1.1k</a></li>
+										<p class="copyright">&copy; 2020 Mathisi-fy. </p>
+									</ul>
+										
+								</footer>
+							</article>
+
+					</div>
+				
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/browser.min.js' %}"></script>
+		<script src="{% static 'js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'js/util.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
+</html>
+
+{% endblock %}
