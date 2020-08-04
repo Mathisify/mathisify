@@ -56,7 +56,8 @@ ROOT_URLCONF = 'mathisify.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'home')]
+        'DIRS': [os.path.join(BASE_DIR, 'home'),
+os.path.join(BASE_DIR, 'chapters')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
