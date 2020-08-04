@@ -67,14 +67,14 @@
                 <input name="password2" type="password" class="form-control" placeholder="Confirm Password"><br>
                 <button type="submit">Register</button>
             </form>
-
+            
             <div>
                 {% for message in messages %}
                     <h3>{{ message }}</h3>
                 {% endfor %}
             </div>
 
-
+                <p>Already registered? <a href="/accounts/login/">Login here</a></p>
             <!-- Pagination -->
 
 
