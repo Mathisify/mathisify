@@ -79,7 +79,7 @@
 					$search.removeClass('visible');
 				}, 100);
 			});
-
+			
 	// Intro.
 		var $intro = $('#intro');
 
