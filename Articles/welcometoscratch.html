@@ -73,8 +73,10 @@
 								<footer>
 									<ul class="stats">
 										<li><a href="/chapterone/">Scratch Fundementals</a></li>
-										<li><a class="icon solid fa-eye">103.6k</a></li>
-										<li><a class="icon solid fa-comment">128</a></li>
+										{% for views in views %}
+										<li><a href="#" class="icon solid fa-eye">{{views.intpro}}</a></li>
+										{% endfor %}
+										
 										<p class="copyright">&copy; 2020 Mathisi-fy. </p>
 									</ul>
 										

@@ -1,40 +1,48 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
-from .models import Post
+from .models import Post, View
 
 
 def index(request):
-    return render(request, 'index.html')
+    views = View.objects.all()
+    return render(request, 'index.html', {'views': views})
 
 
 def chapterone(request):
-    return render(request, 'chapterone.html')
+    views = View.objects.all()
+    return render(request, 'chapterone.html', {'views': views})
 
 
 def about(request):
-    return render(request, 'about.html')
+    views = View.objects.all()
+    return render(request, 'about.html', {'views': views})
 
 
 def compandint(request):
-    return render(request, 'compandint.html')
+    views = View.objects.all()
+    return render(request, 'compandint.html', {'views': views})
 
 
 def chapterzero(request):
-    return render(request, 'chapterzero.html')
+    views = View.objects.all()
+    return render(request, 'chapterzero.html', {'views': views})
 
 
 def welcometoscratch(request):
-    return render(request, 'welcometoscratch.html')
+    views = View.objects.all()
+    return render(request, 'welcometoscratch.html', {'views': views})
 
 def diginfo(request):
-    return render(request, 'diginfo.html')
+    views = View.objects.all()
+    return render(request, 'diginfo.html', {'views': views})
 
 def elements(request):
-    return render(request, 'elements.html')
+    views = View.objects.all()
+    return render(request, 'elements.html', {'views': views})
 
 def workshops(request):
     if request.user.is_authenticated:
-        return render(request, 'workshops.html')
+        return render(request, 'workshops.html', {'views': views})
     else:
         return redirect('/accounts/register/')
 

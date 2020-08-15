@@ -95,7 +95,9 @@
 								<footer>
 									<ul class="stats">
 										<li><a href="/chapterzero/">Computer Science Principles</a></li>
-										<li><a class="icon solid fa-eye">1.3k</a></li>
+										{% for views in views %}
+										<li><a href="#" class="icon solid fa-eye">{{views.compandint}}</a></li>
+									{% endfor %}
 										<p class="copyright">&copy; 2020 Mathisi-fy. </p>
 									</ul>
 										
