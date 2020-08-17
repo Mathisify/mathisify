@@ -13,4 +13,5 @@ urlpatterns = [
     path('diginfo/', views.diginfo),
     path('elements/', views.elements),
     path('workshops/', views.workshops),
+    path('histcomp/', views.histcomp),
 ]

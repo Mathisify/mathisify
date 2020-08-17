@@ -22,6 +22,10 @@ def compandint(request):
     views = View.objects.all()
     return render(request, 'compandint.html', {'views': views})
 
+def histcomp(request):
+    views = View.objects.all()
+    return render(request, 'histcomp.html', {'views': views})
+
 
 def chapterzero(request):
     views = View.objects.all()
