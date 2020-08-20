@@ -7,7 +7,7 @@ class Post(models.Model):
 
 
 class View(models.Model):
-	intpro = models.IntegerField()
-	diginfo = models.IntegerField()
-	compandint = models.IntegerField()
-	histcomp = models.IntegerField(default=0)
+	intpro = models.CharField(max_length=1000)
+	diginfo = models.CharField(max_length=1000)
+	compandint = models.CharField(max_length=1000)
+	histcomp = models.CharField(max_length=1000)
