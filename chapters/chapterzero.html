@@ -104,7 +104,9 @@
 								</ul>
 								<ul class="stats">
 									<li><a href="/chapterzero/">Computer Science Principles</a></li>
-									<li><a class="icon solid fa-eye">{{views.diginfo}</a></li>
+									{% for views in views %}
+									<li><a class="icon solid fa-eye">{{views.diginfo}}</a></li>
+									{% endfor %}
 								</ul>
 							</footer>
 						</article>
@@ -128,7 +130,9 @@
 									</ul>
 									<ul class="stats">
 										<li><a href="/chapterzero/">Computer Science Principles</a></li>
+										{% for views in views %}
 										<li><a class="icon solid fa-eye">{{views.compandint}}</a></li>
+										{% endfor %}
 									</ul>
 								</footer>
 							</article>
