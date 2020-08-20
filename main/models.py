@@ -10,3 +10,4 @@ class View(models.Model):
 	intpro = models.IntegerField()
 	diginfo = models.IntegerField()
 	compandint = models.IntegerField()
+	histcomp = models.IntegerField(default=0)
