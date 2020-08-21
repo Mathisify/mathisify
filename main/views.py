@@ -31,6 +31,10 @@ def chapterzero(request):
     views = View.objects.all()
     return render(request, 'chapterzero.html', {'views': views})
 
+def chapterzero2(request):
+    views = View.objects.all()
+    return render(request, 'chapterzero2.html', {'views': views})
+
 
 def welcometoscratch(request):
     views = View.objects.all()
