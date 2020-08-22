@@ -62,7 +62,7 @@
                 <li><a href="#menu">Select Language</a></li>
                 <li>
                     {% if user.is_authenticated %}
-                        <h3>Hello, {{ user.first_name }}</h3>
+                        <a href="accounts/profile/"><h3>Hello, {{ user.first_name }}</h3></a>
                         {% else %}
                     {% endif %}
                 </li>
