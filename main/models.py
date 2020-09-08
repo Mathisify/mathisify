@@ -11,3 +11,4 @@ class View(models.Model):
 	diginfo = models.CharField(max_length=1000)
 	compandint = models.CharField(max_length=1000)
 	histcomp = models.CharField(max_length=1000)
+	welcometoscratch = models.CharField(max_length=1000)
