@@ -44,6 +44,10 @@ def diginfo(request):
     views = View.objects.all()
     return render(request, 'diginfo.html', {'views': views})
 
+def index2(request):
+    views = View.objects.all()
+    return render(request, 'index2.html', {'views': views})
+
 def elements(request):
     views = View.objects.all()
     return render(request, 'elements.html', {'views': views})

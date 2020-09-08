@@ -15,4 +15,5 @@ urlpatterns = [
     path('elements/', views.elements),
     path('workshops/', views.workshops),
     path('histcomp/', views.histcomp),
+    path('index2/', views.index2),
 ]
