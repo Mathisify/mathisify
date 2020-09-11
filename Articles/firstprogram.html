@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html>
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174077322-1"></script>
+		<script>
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'UA-174077322-1');
+		</script>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<meta property="og:title" content="Mathisi-fy" />
+		<meta property="og:image" content="/static/images/mlogo4.png" />
+		 <!-- Start of Async Drift Code -->
+		 <script>
+			"use strict";
+		
+			!function() {
+			 var t = window.driftt = window.drift = window.driftt || [];
+			if (!t.init) {
+				if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+				t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+				t.factory = function(e) {
+				 return function() {
+					var n = Array.prototype.slice.call(arguments);
+					return n.unshift(e), t.push(n), t;
+				};
+				}, t.methods.forEach(function(e) {
+				 t[e] = t.factory(e);
+			 }), t.load = function(t) {
+				var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+				 o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+				var i = document.getElementsByTagName("script")[0];
+				 i.parentNode.insertBefore(o, i);
+				};
+			 }
+			}();
+			drift.SNIPPET_VERSION = '0.3.1';
+			drift.load('c7yv5hz6yckb');
+			</script>
+			<!-- End of Async Drift Code -->
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>Writing your first program</h2>
+										<p><a href="/chapterone/">Chapter 1 : Scratch Fundementals</a></p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2020-22-07">July 22nd, 2020</time>
+										<a href="#" class="author"><span class="name">Isamar Zhu</span><img src="/static/images/isamar.png" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="/static/images/pic05.jpg" alt="" /></span>
+								<p><b>Let's write our first program in Scratch!</b></p>
+								
+								<p><p style="text-indent: 40px">Let’s write a program that makes two sprites dance around to some music.
+
+                                    Note: Please make sure to periodically save your project using the “Save Now” button in the toolbar to avoid losing your work!
+                                    </p>
+
+									<div class="col-12"><span class="image right"><img src="/static/images/pro1.png" alt="" /></span></div>
+										<p><b>1. Adding a Sprite</b></p>
+										
+                                        <p style="text-indent: 40px">First, we need to add a sprite to our project. 
+                                            In the sprites pane, hover over the cat button, then select “Choose a Sprite”. 
+                                            Here, you can select any sprite you’d like to be the second character in our dance scene. 
+                                            Once the sprite is created, you can drag it anywhere you’d like.</p>
+											
+										<div class="col-12"><span class="image left"><img src="/static/images/pro2.png" alt="" /></span></div>
+										<p><b>2. Adding a Background</b></p>
+                                    <p style="text-indent: 40px">Next, let’s add a background. Next to the sprites pane, there is a toolbar used for choosing backgrounds. 
+                                        Select the “Choose a Backdrop” button and choose a fun background for your project.</p>
+										
+                                        <p><b>3. Adding a Block</b></p>
+										
+                                        <p style="text-indent: 40px">Let’s experiment a bit with the blocks. Navigate to the “Motion” section of the Block Palette. 
+                                            There are many blocks here that can be used to make our sprites move. When we use a block, it is called running the code. </p>
+                                        <p style="text-indent: 40px">Drag a “move 10 steps” block to your script area, and click it to make the sprite move. The sprite that will move is the sprite that is selected in your sprite pane. 
+                                            Notice that there are two different script areas for each of your sprites, meaning that the blocks only apply to the sprite that is selected.</p>
+                                        
+                                            <p><b>4. Adding Loops</b></p>
+										
+                                        <p style="text-indent: 40px">We will now write a section of repeating code, called a <b>loop</b>, that will repeat under certain conditions. 
+                                            For now, we won’t use any loops with conditions. Instead, we will use a loop that repeats forever (while the program is running). 
+                                            In your block palette, navigate to the “Events” section. 
+                                            Drag the “forever” block into your script area.</p>
+                                        <p style="text-indent: 40px">The “forever” block looks different from the “move 10 steps” block; it has a space inside. 
+                                            This space is called the body of the loop. All the code in the <b>body</b> of the loop will execute while the loop is running. 
+                                            In our case, the code in the body of the loop will repeat forever.</p>
+                                        
+                                            <p><b>5. Writing the Body of a Loop</b></p>
+										<div class="col-12"><span class="image right"><img src="/static/images/pro3.png" alt="" /></span></div>
+                                        <p style="text-indent: 40px">Drag the following blocks into the body of the loop, and click the blocks to run them. 
+                                            The sprite will move forwards and backwards on it’s own without you having to click on the blocks multiple times. 
+                                            This makes a loop very useful since programmers don’t have to perform repeated actions; the loop does all of the work.</p>
+                                        <p style="text-indent: 40px">We have added the “wait 0.5 seconds” block so that there is some time before each movement of the sprite.
+                                            Make sure to select the second sprite and add the code for that sprite as well. </p>
+
+                                            <p><b>6. Adding an Event</b></p>
+										
+                                        <p style="text-indent: 40px">Although clicking a script causes it to run, there is a more formal way to tell the code to start running. 
+                                            Go to the “Events” section in the block palette and clip the “When ⚑ clicked” block to the top of your code. 
+                                            This causes the code to run when the flag symbol above your project window is clicked. Add this for both sprites.</p>
+                                        
+                                            <p><b>7. Add Background Music</b></p>
+										<div class="col-12"><span class="image left"><img src="/static/images/pro4.png" alt="" /></span></div>
+                                        <p style="text-indent: 40px">Lastly, you can add some background music to your project. 
+                                            Switch over to the sounds palette, which can be found next to the block palette. 
+                                            You can import a sound to your program by selecting the “Choose a Sound” button, which allows you to use the sound. </p>
+                                        <p style="text-indent: 40px">Next, go back to your block palette and add another “When ⚑ clicked”, as well as a “forever” block under it. 
+											This is needed to make sure the sound loops while the program is running. 
+											<div class="col-12"><span class="image right"><img src="/static/images/pro5.png" alt="" /></span></div>
+                                            Add a sound to the body of the forever loop by going to the “Sound” section of the block palette and dragging the “Play sound until done” block into the loop.
+											Now, whenever the flag button is clicked, the sound will play in a loop.
+                                            This only needs to be done for one of the sprites since the sound isn’t unique to a sprite and only one sound is playing at a time.
+                                            </p>
+
+
+                                        
+                                        <p style="text-indent: 40px">Your code should now look like this. 
+                                            Using this tutorial, you can write many different programs using loops, blocks, and sprites. Happy coding!</p>
+											
+										
+										
+
+								
+								<footer>
+									<ul class="stats">
+										<li><a href="/chapterone/">Scratch Fundementals</a></li>
+										{% for views in views %}
+										<li><a href="#" class="icon solid fa-eye">109</a></li>
+										{% endfor %}
+										
+										<p class="copyright">&copy; 2020 Mathisi-fy. </p>
+									</ul>
+										
+								</footer>
+							</article>
+
+					</div>
+				
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/browser.min.js' %}"></script>
+		<script src="{% static 'js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'js/util.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
+</html>
+
+{% endblock %}

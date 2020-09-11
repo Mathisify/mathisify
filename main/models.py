@@ -12,3 +12,4 @@ class View(models.Model):
 	compandint = models.CharField(max_length=1000)
 	histcomp = models.CharField(max_length=1000)
 	welcometoscratch = models.CharField(max_length=1000)
+	firstprogram = models.CharField(max_length=1000)

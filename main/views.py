@@ -52,6 +52,10 @@ def elements(request):
     views = View.objects.all()
     return render(request, 'elements.html', {'views': views})
 
+def firstprogram(request):
+    views = View.objects.all()
+    return render(request, 'firstprogram.html', {'views': views})
+
 def workshops(request):
     if request.user.is_authenticated:
         return render(request, 'workshops.html', {'views': views})
