@@ -18,4 +18,5 @@ urlpatterns = [
     path('index2/', views.index2),
     path('firstprogram/', views.firstprogram),
     path('ifstate/', views.ifstate),
+    path('loops/', views.loops),
 ]

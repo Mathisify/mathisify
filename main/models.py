@@ -14,3 +14,4 @@ class View(models.Model):
 	welcometoscratch = models.CharField(max_length=1000)
 	firstprogram = models.CharField(max_length=1000)
 	ifstate = models.CharField(max_length=1000)
+	loops = models.CharField(max_length=1000)
