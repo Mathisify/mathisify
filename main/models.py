@@ -13,3 +13,4 @@ class View(models.Model):
 	histcomp = models.CharField(max_length=1000)
 	welcometoscratch = models.CharField(max_length=1000)
 	firstprogram = models.CharField(max_length=1000)
+	ifstate = models.CharField(max_length=1000)

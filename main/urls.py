@@ -17,4 +17,5 @@ urlpatterns = [
     path('histcomp/', views.histcomp),
     path('index2/', views.index2),
     path('firstprogram/', views.firstprogram),
+    path('ifstate/', views.ifstate),
 ]

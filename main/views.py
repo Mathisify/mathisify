@@ -51,6 +51,10 @@ def index2(request):
 def elements(request):
     views = View.objects.all()
     return render(request, 'elements.html', {'views': views})
+    
+def ifstate(request):
+    views = View.objects.all()
+    return render(request, 'ifstate.html', {'views': views})
 
 def firstprogram(request):
     views = View.objects.all()
