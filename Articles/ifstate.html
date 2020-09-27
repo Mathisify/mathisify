@@ -59,36 +59,66 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2>If-Statements in Scratch</h2>
+										<h2>If-Statements and Loops in Scratch</h2>
 										<p><a href="/chapterone/">Chapter 1 : Scratch Fundementals</a></p>
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2020-22-07">July 22nd, 2020</time>
+										<time class="published" datetime="2020-22-07">September 25th, 2020</time>
 										<a href="#" class="author"><span class="name">Isamar Zhu</span><img src="/static/images/isamar.png" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="/static/images/welcometoscratchthumb.png" alt="" /></span>
-								<p><b>What is Scratch?</b></p>
-								<div class="col-12"><span class="image right"><img src="/static/images/scratch0.jpg" alt="" /></span></div>	
-								<p><p style="text-indent: 40px">Scratch is a website that allows users to create games and animations while introducing many basic concepts that are used often in programming, such as functions and loops. Scratch itself can also be considered a programming language.
-									It’s especially fitted for beginners because it doesn’t focus much on syntax (coding grammar), but instead uses movable blocks which allows for easier understanding of how to code. </p>
+								<!--<span class="image featured"><img src="/static/images/welcometoscratchthumb.png" alt="" /></span>-->
+								<p><b>If-Statements and Loops</b></p>
+								<!--<div class="col-12"><span class="image right"><img src="/static/images/scratch0.jpg" alt="" /></span></div>	-->
+								<p><p style="text-indent: 40px">If-statements and loops are parts of coding that are used to make programs more efficient. In this article, we will be defining and exploring the function of these concepts. Log into your Scratch account and create a new project. We will use the simple project set up with one sprite.</p>
 
-
-										<p><b>How to Start Using Scratch</b></p>
-										<p style="text-indent: 40px">First, go to the <a href="https://scratch.mit.edu/">Scratch</a> website <a href="https://scratch.mit.edu/">(https://scratch.mit.edu/)</a> and create an account. 
-										Creating an account is recommended as it allows users to save their projects. Next, press the “Create” button in the toolbar at the top of the screen to create a new project. There are many different projects that can be created, such as animations, clicking games, or designing characters, but for this example, we are going to be making a simple dancing animation. 
-</p>
-										<p><b>Navigating the Interface</b></p>
-										<div class="col-12"><span class="image left"><img src="/static/images/scratch1.png" alt="" /></span></div>	
-									<p style="text-indent: 40px">Refer to the image on the left. Here are some important terms to know:
-										<p><b>Toolbar:</b> The toolbar is used to manage the project. Here, the project can be saved, as well as restored to the last saved version. There are also many helpful tutorials that can be accessed using the toolbar.</p>
-										<p><b>Block Palette:</b> The block palette contains the blocks needed to write code. There are many different types of blocks available for use, and each of them perform different functions. </p>
-										<div class="col-12"><span class="image right"><img src="/static/images/scratch2.png" alt="" /></span></div>
-										<p><b>Script Area:</b> The script area is where users can drag and stack blocks together, which forms scripts. Running the script runs the program. This is what forms the basis of your project.</p>
-										<p><b>Blocks:</b> Blocks are the pieces that make up the program. They can be stacked together and moved around to create a program.</p>
-										<p><b>Sprite:</b> The sprite is an object in the program that follows instructions that the scripts give. The yellow cat is the default sprite that is given, but it is possible to add new sprites!</p>
-										<p><b>Sprites</b> Pane: The sprites pane is where users can add, delete, or edit sprites.
-											
+                                <div class="col-12"><span class="image left"><img src="/static/images/ifstate1.png" alt="" /></span></div>
+									<p><b>What are If-Statements?</b></p>
+                                        <p style="text-indent: 40px">If-statements are used to run code only under certain conditions. 
+                                            The programmer sets a <b>condition</b>, which can either be true or false. 
+                                            If the condition is true, the code within the if-statement will run. 
+                                            An example of this in plain English is: <b>If</b> it is raining, <b>bring</b> an umbrella. 
+                                            This concept can be extremely useful for programs that produce different results based on different circumstances. 
+                                        </p>
+                                        
+									<p><b>Setting up the If-Statement</b></p>
+										
+                                             <p style="text-indent: 40px">Let’s demonstrate if-statements in Scratch. 
+                                        Navigate to the Events section of the block palette, and place the “When ⚑ clicked” block into the script area. 
+                                        This will be how most scripts are started, since the block defines where the code will start running when the green flag is clicked.</p>
+                                        
+                                             <p style="text-indent: 40px">Like the first program we wrote, we need a “forever” loop to make sure the code keeps running for the duration of the program. 
+                                        Recall that the “forever” loop repeats only the included code inside the loop. 
+                                        If we didn’t have the “forever” loop, the code after the flag block would only run once, which is too short of a program for our purposes.
+                                                </p> 
+                                                
+                                                <p style="text-indent: 40px">Next, select “if < > then” block from the Control section of the block palette, and clip it inside the forever loop. 
+                                        The if-then format means that if a given condition is true, then the code within the body of the if-statement will run. 
+                                        The <b>body</b> of the if-statement is the code that is placed inside the if-then shell. Your code should look like this so far.
+                                                </p>
+                                                <div class="col-12"><span class="image right"><img src="/static/images/ifstate2.png" alt="" /></span></div>
+                                    <p><b>Setting up the If-Statement</b></p>
+                                         <p style="text-indent: 40px">Every if-statement needs a condition, which tells the program whether to run the body of the if-statement or not. 
+                                         A condition evaluates to true or false, and if it is true, the code that makes up the body will run. 
+                                            For example, the condition could be “the drink is hot” or “the given number is greater than 10”. 
+                                            <div class="col-12"><span class="image left"><img src="/static/images/ifstate3.png" alt="" /></span></div>
+                                            In our Scratch program, we will use a Sensing block as a condition. If the sensor is fulfilled, the body of the if-statement will run. 
+                                            Drag a “key space pressed?” block into the empty space between “if” and “then”. 
+                                            If the key space on your keyboard is pressed, then the code will run.
+                                            </p>
+                                            <div class="col-12"><span class="image right"><img src="/static/images/ifstate4.png" alt="" /></span></div>
+                                    <p><b>Writing the body of the if-statement</b></p>
+                                        <p style="text-indent: 40px">Finally, we need to write the code that will run while the space key is being pressed. 
+                                            Drag a “move 10 steps” block inside the if-statement. 
+                                            The sprite will now move 10 steps forward when you press the space key! 
+                                            Test this out by pressing the green flag to start the program, and try pressing different keys. 
+                                            Notice the sprite only moves when the condition (space key pressed) is true.</p>
+                                            
+                                    <p><b>Multiple if-statements</b></p>
+                                        <p style="text-indent: 40px">Using multiple if-statements, we can write a pretty complicated program! 
+                                            Observe the code below. The sprite will move right when the right arrow is pressed, left when the left arrow is pressed, and so on. 
+                                            The “change x” and “change y” refer to the axis on which the sprite is moving. 
+                                        </p>
 										
 										
 
