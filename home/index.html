@@ -62,7 +62,61 @@
 						<article class="post">
 							<header>
 								<div class="title">
-									<h2><a href="/firstprogram">Write your First Program!</a></h2>
+									<h2><a href="/loops/">Introduction to Loops</a></h2>
+									<p><a href="/chapterone/">Chapter 1 : Scratch Fundementals</a></p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">September 27th, 2020</time>
+									<a href="#" class="author"><span class="name">Isamar Zhu</span><img src="/static/images/isamar.png" alt="" /></a>
+								</div>
+							</header>
+							<a href="/loops/" class="image featured"><img src="/static/images/loopsthumb.png" alt="" /></a>
+							<p style="text-indent: 40px">We’ve already seen one type of loop used in Scratch, the forever loop. 
+								As the name “loop” implies, a loop repeats the code in its body. 
+								Loops are useful when programmers want to run code multiple times, but don’t want to write the same code over and over again. </p>
+							<footer>
+								<ul class="actions">
+									<li><a href="/loops/" class="button large">Continue Reading</a></li>
+								</ul>
+								<ul class="stats">
+									<li><a href="/chapterzero/">Scratch Fundementals</a></li>
+									{% for views in views %}
+										<li><a href="#" class="icon solid fa-eye">{{views.loops}}</a></li>
+										{% endfor %}
+								</ul>
+							</footer>
+						</article>
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a href="/ifstate/">If-Statements in Scratch</a></h2>
+									<p><a href="/chapterone/">Chapter 1 : Scratch Fundementals</a></p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">September 25th, 2020</time>
+									<a href="#" class="author"><span class="name">Isamar Zhu</span><img src="/static/images/isamar.png" alt="" /></a>
+								</div>
+							</header>
+							<a href="/ifstate/" class="image featured"><img src="/static/images/ifstatethumb.png" alt="" /></a>
+							<p style="text-indent: 40px">If-statements are used to make programs more efficient. 
+								In this article, we will be defining and exploring the function of this concept.
+								 Log into your Scratch account and create a new project. We will use the simple project set up with one sprite.</p>
+							<footer>
+								<ul class="actions">
+									<li><a href="/ifstate/" class="button large">Continue Reading</a></li>
+								</ul>
+								<ul class="stats">
+									<li><a href="/chapterzero/">Scratch Fundementals</a></li>
+									{% for views in views %}
+										<li><a href="#" class="icon solid fa-eye">{{views.ifstate}}</a></li>
+										{% endfor %}
+								</ul>
+							</footer>
+						</article>
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a href="/firstprogram/">Write your First Program!</a></h2>
 									<p><a href="/chapterone/">Chapter 1 : Scratch Fundementals</a></p>
 								</div>
 								<div class="meta">
@@ -139,32 +193,7 @@
 								</ul>
 							</footer>
 						</article>
-						<article class="post">
-							<header>
-								<div class="title">
-									<h2><a href="/diginfo/">Digital Information</a></h2>
-									<p><a href="/chapterzero/">Chapter 0 : Computer Science Principles</a></p>
-								</div>
-								<div class="meta">
-									<time class="published" datetime="2015-11-01">August 2nd, 2020</time>
-									<a href="https://dylaniskandar.com" class="author"><span class="name">Dylan Iskandar</span><img src="/static/images/avatardylan.png" alt="" /></a>
-								</div>
-							</header>
-							<a href="/diginfo/" class="image featured"><img src="/static/images/diginfothumb.png" alt="" /></a>
-							<p style="text-indent: 40px">Like humans, computers communicate with each other through specific languages. The data and information received is stored in ‘circuits’ and wires inside the computer itself. 
-								These circuits and wires store and process all the information of the computer.  </p>
-							<footer>
-								<ul class="actions">
-									<li><a href="/diginfo/" class="button large">Continue Reading</a></li>
-								</ul>
-								<ul class="stats">
-									<li><a href="/chapterzero/">Computer Science Principles</a></li>
-									{% for views in views %}
-										<li><a href="#" class="icon solid fa-eye">{{views.diginfo}}</a></li>
-									{% endfor %}
-								</ul>
-							</footer>
-						</article>
+						
 						
 						<!-- Pagination -->
 						<ul class="actions pagination">
@@ -231,6 +260,22 @@
 										</header>
 										<a href="/firstprogram/" class="image"><img src="/static/images/firstprogramthumb.png" alt="" /></a>
 									</article>
+									<article class="mini-post">
+										<header>
+											<h3><a href="/ifstate/">If-Statements in Scratch</a></h3>
+											<time class="published" datetime="2020-22-07">September 25th, 2020</time>
+											<a href="#" class="author"><img src="/static/images/isamar.png" alt="" /></a>
+										</header>
+										<a href="/ifstate/" class="image"><img src="/static/images/ifstatethumb.png" alt="" /></a>
+									</article>
+									<article class="mini-post">
+										<header>
+											<h3><a href="/loops/">Introduction to Loops</a></h3>
+											<time class="published" datetime="2020-22-07">September 27th, 2020</time>
+											<a href="#" class="author"><img src="/static/images/isamar.png" alt="" /></a>
+										</header>
+										<a href="/loops/" class="image"><img src="/static/images/loopsthumb.png" alt="" /></a>
+									</article>
 
 									</li>
 								</div>
@@ -240,6 +285,20 @@
 							<section>
 								<ul class="posts">
 									<li>
+										<article>
+											<header>
+												<h3><a href="/loops/">Introduction to Loops</a></h3>
+												<time class="published" datetime="2020-22-07">September 27th, 2020</time>
+											</header>
+											<a href="/loops/" class="image"><img src="/static/images/loopsthumb.png" alt=""/></a>
+										</article>
+										<article>
+											<header>
+												<h3><a href="/ifstate/">If-Statements in Scratch</a></h3>
+												<time class="published" datetime="2020-22-07">September 25th, 2020</time>
+											</header>
+											<a href="/ifstate/" class="image"><img src="/static/images/ifstatethumb.png" alt=""/></a>
+										</article>
 										<article>
 											<header>
 												<h3><a href="/firstprogram/">Write your First Program!</a></h3>

@@ -60,7 +60,32 @@
 
 						<!-- Post -->
 						
-						
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a href="/diginfo/">Digital Information</a></h2>
+									<p><a href="/chapterzero/">Chapter 0 : Computer Science Principles</a></p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">August 2nd, 2020</time>
+									<a href="https://dylaniskandar.com" class="author"><span class="name">Dylan Iskandar</span><img src="/static/images/avatardylan.png" alt="" /></a>
+								</div>
+							</header>
+							<a href="/diginfo/" class="image featured"><img src="/static/images/diginfothumb.png" alt="" /></a>
+							<p style="text-indent: 40px">Like humans, computers communicate with each other through specific languages. The data and information received is stored in ‘circuits’ and wires inside the computer itself. 
+								These circuits and wires store and process all the information of the computer.  </p>
+							<footer>
+								<ul class="actions">
+									<li><a href="/diginfo/" class="button large">Continue Reading</a></li>
+								</ul>
+								<ul class="stats">
+									<li><a href="/chapterzero/">Computer Science Principles</a></li>
+									{% for views in views %}
+										<li><a href="#" class="icon solid fa-eye">{{views.diginfo}}</a></li>
+									{% endfor %}
+								</ul>
+							</footer>
+						</article>
                         <article class="post">
                             <header>
                                 <div class="title">
