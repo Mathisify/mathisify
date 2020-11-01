@@ -2,103 +2,107 @@
 {% load static %}
 
 <html lang="en">
-    <head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174077322-1"></script>
-		<script>
-  			window.dataLayer = window.dataLayer || [];
-  			function gtag(){dataLayer.push(arguments);}
-  			gtag('js', new Date());
 
-  			gtag('config', 'UA-174077322-1');
-		</script>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
-		<meta property="og:title" content="Mathisi-fy" />
-        <meta property="og:image" content="/static/images/mlogo4.png" />
-        <link rel="shortcut icon" href="/static/images/whitefav.png">
-        <!-- Start of Async Drift Code -->
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174077322-1"></script>
     <script>
-    "use strict";
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    !function() {
-     var t = window.driftt = window.drift = window.driftt || [];
-    if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-         return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-        };
-        }, t.methods.forEach(function(e) {
-         t[e] = t.factory(e);
-     }), t.load = function(t) {
-        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-         o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
-         i.parentNode.insertBefore(o, i);
-        };
-     }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('c7yv5hz6yckb');
+        gtag('config', 'UA-174077322-1');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <meta property="og:title" content="Mathisi-fy" />
+    <meta property="og:image" content="/static/images/mlogo4.png" />
+    <link rel="shortcut icon" href="/static/images/whitefav.png">
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('c7yv5hz6yckb');
     </script>
     <!-- End of Async Drift Code -->
-	</head>
+</head>
+
 <body class="is-preload">
 
-<!-- Wrapper -->
-<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-    <!-- Header -->
-    <header id="header">
-        <h1><a href="/">Mathisi-fy</a></h1>
-        <nav class="links">
-            <ul>
-                <li><a href="/chapterzero/">Chapter 0</a></li>
-                <li><a href="/chapterone/">Chapter 1</a></li>
-                <li>
-                    {% if user.is_authenticated %}
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="/">Mathisi-fy</a></h1>
+            <nav class="links">
+                <ul>
+                    <li><a href="/chapterzero/">Chapter 0</a></li>
+                    <li><a href="/chapterone/">Chapter 1</a></li>
+                    <li>
+                        {% if user.is_authenticated %}
                         <a href="https://airtable.com/shreOobtrLcMeV9CK">Workshops</a>
                         {% else %}
                         <a href="/accounts/register">Workshops</a>
-                    {% endif %}
-                </li>
-                <li><a href="https://mathisify.org">About Us</a></li>
-                <li><a href="#menu">Select Language</a></li>
-                <li>
-                    {% if user.is_authenticated %}
-                        <a href="accounts/profile/"><h3>Hello, {{ user.first_name }}</h3></a>
+                        {% endif %}
+                    </li>
+                    <li><a href="https://mathisify.org">About Us</a></li>
+                    <li><a href="#menu">Select Language</a></li>
+                    <li>
+                        {% if user.is_authenticated %}
+                        <a href="/accounts/profile/">
+                            <h3>Hello, {{ user.first_name }}</h3>
+                        </a>
                         {% else %}
-                    {% endif %}
-                </li>
-                
-            </ul>
-        </nav>
-        <nav class="main">
-            <ul>
-                
-                <li class="search">
-                    <a class="fa-search" href="#search">Search</a>
-                    <form id="search" method="GET" action="/search/">
-                        <input id="query" type="text" name="query" placeholder="Search"/>
-                    </form>
-                </li>
-                <li class="menu">
-                    <a class="fa-bars" href="#menu">Menu</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+                        {% endif %}
+                    </li>
 
-    <!-- Menu -->
-    <section id="menu">
+                </ul>
+            </nav>
+            <nav class="main">
+                <ul>
 
-        <!-- Search -->
+                    <li class="search">
+                        <a class="fa-search" href="#search">Search</a>
+                        <form id="search" method="GET" action="/search/">
+                            <input id="query" type="text" name="query" placeholder="Search" />
+                        </form>
+                    </li>
+                    <li class="menu">
+                        <a class="fa-bars" href="#menu">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-        <!-- Links -->
-        <section>
+        <!-- Menu -->
+        <section id="menu">
+
+            <!-- Search -->
+
+            <!-- Links -->
+            <!-- <section>
             <ul class="links">
                 <li>
                     <a href="/chapterzero/">
@@ -115,46 +119,48 @@
                     </a>
                 </li>
             </ul>
-        </section>
+        </section> -->
 
-        <!-- Actions -->
-        <section>
+            <!-- Actions -->
+            <section>
 
 
-            <ul class="actions stacked">
-                {% if user.is_authenticated %}
+                <ul class="actions stacked">
+                    {% if user.is_authenticated %}
                     <li><a href="/accounts/logout/" class="button large fit">Log Out</a></li>
-                {% else %}
+                    {% else %}
                     <li><a href="/accounts/login/" class="button large fit">Log In</a></li>
                     <li><a href="/accounts/register/" class="button large fit">Register</a></li>
-                {% endif %}
-            </ul>
-            <ul>
-                <div id="google_translate_element">
+                    {% endif %}
+                </ul>
+                <ul>
+                    <div id="google_translate_element">
 
-                    <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                    }
-                    </script>
-                    
-                   
-                    <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
-                    <script>
-                        (function(){var gtConstEvalStartTime = new Date();
-                    function d(b){var a=document.getElementsByTagName("head")[0];a||(a=document.body.parentNode.appendChild(document.createElement("head")));a.appendChild(b)}function _loadJs(b){var a=document.createElement("script");a.type="text/javascript";a.charset="UTF-8";a.src=b;d(a)}function _loadCss(b){var a=document.createElement("link");a.type="text/css";a.rel="stylesheet";a.charset="UTF-8";a.href=b;d(a)}function _isNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)if(!(a=a[b[c]]))return!1;return!0}
-                    function _setupNS(b){b=b.split(".");for(var a=window,c=0;c<b.length;++c)a.hasOwnProperty?a.hasOwnProperty(b[c])?a=a[b[c]]:a=a[b[c]]={}:a=a[b[c]]||(a[b[c]]={});return a}window.addEventListener&&"undefined"==typeof document.readyState&&window.addEventListener("DOMContentLoaded",function(){document.readyState="complete"},!1);
-                    if (_isNS('google.translate.Element')){return}(function(){var c=_setupNS('google.translate._const');c._cest = gtConstEvalStartTime;gtConstEvalStartTime = undefined;c._cl='en';c._cuc='googleTranslateElementInit';c._cac='';c._cam='';c._ctkk='443658.3451255544';var h='translate.googleapis.com';var s=(true?'https':window.location.protocol=='https:'?'https':'http')+'://';var b=s+h;c._pah=h;c._pas=s;c._pbi=b+'/translate_static/img/te_bk.gif';c._pci=b+'/translate_static/img/te_ctrl3.gif';c._pli=b+'/translate_static/img/loading.gif';c._plla=h+'/translate_a/l';c._pmi=b+'/translate_static/img/mini_google.png';c._ps=b+'/translate_static/css/translateelement.css';c._puh='translate.google.com';_loadCss(c._ps);_loadJs(b+'/translate_static/js/element/main.js');})();})();
-                    </script>
+                        <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            }
+                        </script>
+
+
+                        <!--<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>-->
+                        <script>
+                            (function () {
+                                var gtConstEvalStartTime = new Date();
+                                function d(b) { var a = document.getElementsByTagName("head")[0]; a || (a = document.body.parentNode.appendChild(document.createElement("head"))); a.appendChild(b) } function _loadJs(b) { var a = document.createElement("script"); a.type = "text/javascript"; a.charset = "UTF-8"; a.src = b; d(a) } function _loadCss(b) { var a = document.createElement("link"); a.type = "text/css"; a.rel = "stylesheet"; a.charset = "UTF-8"; a.href = b; d(a) } function _isNS(b) { b = b.split("."); for (var a = window, c = 0; c < b.length; ++c)if (!(a = a[b[c]])) return !1; return !0 }
+                                function _setupNS(b) { b = b.split("."); for (var a = window, c = 0; c < b.length; ++c)a.hasOwnProperty ? a.hasOwnProperty(b[c]) ? a = a[b[c]] : a = a[b[c]] = {} : a = a[b[c]] || (a[b[c]] = {}); return a } window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener("DOMContentLoaded", function () { document.readyState = "complete" }, !1);
+                                if (_isNS('google.translate.Element')) { return } (function () { var c = _setupNS('google.translate._const'); c._cest = gtConstEvalStartTime; gtConstEvalStartTime = undefined; c._cl = 'en'; c._cuc = 'googleTranslateElementInit'; c._cac = ''; c._cam = ''; c._ctkk = '443658.3451255544'; var h = 'translate.googleapis.com'; var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://'; var b = s + h; c._pah = h; c._pas = s; c._pbi = b + '/translate_static/img/te_bk.gif'; c._pci = b + '/translate_static/img/te_ctrl3.gif'; c._pli = b + '/translate_static/img/loading.gif'; c._plla = h + '/translate_a/l'; c._pmi = b + '/translate_static/img/mini_google.png'; c._ps = b + '/translate_static/css/translateelement.css'; c._puh = 'translate.google.com'; _loadCss(c._ps); _loadJs(b + '/translate_static/js/element/main.js'); })();
+                            })();
+                        </script>
                     </div>
-            </ul>
-        </section>
+                </ul>
+            </section>
 
-    </section>
-    {% block content %}
-    {% endblock %}
-</div>
+        </section>
+        {% block content %}
+        {% endblock %}
+    </div>
 
 </body>
-</html>
 
+</html>

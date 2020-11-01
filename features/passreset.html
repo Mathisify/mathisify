@@ -61,21 +61,11 @@
             <div class="loginbox">
                 <form method="POST">
                     {% csrf_token %}
-                    <input name="username" type="text" placeholder="Username"><br>
-                    <input name="password" type="password" placeholder="Password"><br>
-                    <button type="submit">Login</button>
-                    <hr>
-                    <div>
-                        {% for message in messages %}
-                        <h3>{{ message }}</h3>
-                        {% endfor %}
-                    </div>
+                    {{ form }}
+                    <br>
+                    <button type="submit">Request Password Reset</button>
                 </form>
             </div>
-            <p>Forgot Password?<a href="/accounts/password-reset/"> Reset Here</a></p>
-            <p>Don't have an account yet?<a href="/accounts/register/"> Register here</a></p>
-            <!-- Pagination -->
-
 
         </div>
 
