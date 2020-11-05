@@ -4,3 +4,4 @@ Pillow==7.0.0
 psycopg2==2.8.4
 whitenoise==5.0.1
 env-file==2020.7.1
+six==1.14.0

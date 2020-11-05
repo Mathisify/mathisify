@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
+from .views import VerificationView
 
 
 urlpatterns = [
@@ -32,4 +33,5 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
+    path("verify/<uidb64>/<token>", VerificationView.as_view(), name="verify"),
 ]
