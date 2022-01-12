@@ -47,7 +47,10 @@ def index(request):
 
 
 def uni(request):
-    ip_add = get_client_ip(request)
+    try:
+        ip_add = request.headers["x-lookup-ip"]
+    except KeyError:
+        ip_add = get_client_ip(request)
     discordLogger(ip_add)
     return JsonResponse({"ip": f"{ip_add}"})
 
