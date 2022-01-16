@@ -20,39 +20,14 @@ def get_client_ip(request):
     return ip
 
 
-def discordLogger(ip_address):
-    hook = Webhook(
-        "https://discord.com/api/webhooks/789723530467606538/yKGanjuoO9CSP1soNSM9hmSaCNds7Ke68UsMS2GcyT18fuDpBO-0jZpqEG93pR7ck2eC"
-    )
-    headers = {"x-lookup-ip": f"{ip_address}"}
-    resp = requests.get("https://uni.aadibajpai.workers.dev", headers=headers)
-    if resp.ok:
-        embed = Embed(
-            description="University Found",
-            color=0x2ECC71,
-            timestamp="now",  # sets the timestamp to current time
-        )
-        embed.add_field(name="IP Address", value=ip_address)
-        embed.add_field(name="University", value=resp.text)
-
-        return hook.send(embed=embed)
-    return print("no uni")
-
-
 def index(request):
     views = View.objects.all()
     ip_address = get_client_ip(request)
-    discordLogger(ip_address)
+    headers = {"x-lookup-ip": f"{ip_address}"}
+    requests.get("https://uni.pratishrai.workers.dev", headers=headers)
     return render(request, "index.html", {"views": views})
 
 
-def uni(request):
-    try:
-        ip_add = request.headers["x-lookup-ip"]
-    except KeyError:
-        ip_add = get_client_ip(request)
-    discordLogger(ip_add)
-    return JsonResponse({"ip": f"{ip_add}"})
 
 
 def chapterone(request):
